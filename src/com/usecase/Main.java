@@ -2,6 +2,15 @@ package com.usecase;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
+        String name;
+
+        if (args.length > 0) {
+            name = args[0];
+        } else {
+            name = "World";
+        }
+
+        System.out.println("Hello " + name);
     }
 }
